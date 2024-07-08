@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/complaintsforum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="نموذج الاقتراحات والشكاوي"
+        android:textColor="#120505"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        tools:text="نموذج الاقتراحات والشكاوي" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginBottom="20dp"
+        android:background="#FF6F00" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="هدفنا راحتكم"
+                android:textColor="#070707"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:text="هدفنا راحتكم" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40dp"
+                android:text="لا تتردد بإرسال أي ملاحظة أو تقييم للتطبيق  نعمل دائمًا على قراءة ملاحظاتكم ومشاكلكم  وإصلاحها للحصول على بيئة تطبيق سهلة ومريحة"
+                android:textColor="#020202"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:text="لا تتردد بإرسال أي ملاحظة أو تقييم للتطبيق  نعمل دائمًا على قراءة ملاحظاتكم ومشاكلكم  وإصلاحها للحصول على بيئة تطبيق سهلة ومريحة" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="اترك ملاحظتك هنا"
+                android:textColor="#070606"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:text="اترك ملاحظتك هنا" />
+
+            <EditText
+                android:id="@+id/writeComplaints_text"
+                android:layout_width="match_parent"
+                android:layout_height="118dp"
+                android:background="@drawable/white_background"
+                android:backgroundTint="#FFE0B2"
+                android:padding="5dp"
+                android:ellipsize="middle"
+                android:ems="10"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                android:textSize="17sp" />
+
+            <Button
+                android:id="@+id/writeComplaints_sendButt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="40dp"
+                android:backgroundTint="#FF6F00"
+                android:text="أرسل"
+                android:textColor="#F3EDE9"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:text="أرسل" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

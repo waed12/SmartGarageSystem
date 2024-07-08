@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context=".settings">
+
+    <TextView
+        android:id="@+id/settings_page"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="الإعدادات"
+        android:textColor="#070404"
+        android:textSize="30sp" />
+
+    <View
+        android:id="@+id/divider14"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="20dp"
+        android:background="#FF6F00" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/accountSettings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="#FF6F00"
+                android:text="إعدادات الحساب "
+                android:textColor="#120606"
+                android:textSize="24sp"
+                android:visibility="gone" />
+
+
+
+            <TextView
+                android:id="@+id/editPersonalSettings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:padding="10dp"
+                android:text="تعديل البيانات الشخصية"
+                android:textColor="#100707"
+                android:textSize="20sp" />
+
+            <View
+                android:id="@+id/divider15"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="#FF6F00" />
+
+            <TextView
+                android:id="@+id/changePassSettings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:padding="10dp"
+                android:text="تغيير كلمة السر "
+                android:textColor="#0C0404"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/settings_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="50dp"
+                android:backgroundTint="#FF6F00"
+                android:text="إلغاء"
+                android:textSize="24sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

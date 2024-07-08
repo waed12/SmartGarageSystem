@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.lastgarageapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.LastGarageApp"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".edit_admin_personal_data"
+            android:exported="true" />
+        <activity
+            android:name=".admin_personal_page"
+            android:exported="true" />
+        <activity
+            android:name=".add_admin"
+            android:exported="true" />
+        <activity
+            android:name=".settings"
+            android:exported="true" />
+        <activity
+            android:name=".show_drivers_list_item"
+            android:exported="true" />
+        <activity
+            android:name=".show_drivers"
+            android:exported="true" />
+        <activity
+            android:name=".conversation"
+            android:exported="true" />
+        <activity
+            android:name=".write_complaints"
+            android:exported="true" />
+        <activity
+            android:name=".edit_garage"
+            android:exported="true" />
+        <activity
+            android:name=".home_page"
+            android:exported="true" />
+        <activity
+            android:name=".login"
+            android:exported="true" />
+        <activity
+            android:name=".first_page"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".add_line"
+            android:exported="true"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".personal_page"
+            android:exported="true" />
+        <activity
+            android:name=".notification_list_item"
+            android:exported="true" />
+        <activity
+            android:name=".notifications"
+            android:exported="true" />
+        <activity
+            android:name=".chats_list_item"
+            android:exported="true" />
+        <activity
+            android:name=".chats"
+            android:exported="true" />
+        <activity
+            android:name=".news_list_item"
+            android:exported="true" />
+        <activity
+            android:name=".edit_car_data"
+            android:exported="true" />
+        <activity
+            android:name=".edit_personal_data"
+            android:exported="true" />
+        <activity
+            android:name=".change_password"
+            android:exported="true" />
+        <activity
+            android:name=".add_driver"
+            android:exported="true" />
+        <activity
+            android:name=".add_car"
+            android:exported="true" />
+        <activity
+            android:name=".my_actionbar"
+            android:exported="true" />
+        <activity
+            android:name=".menu"
+            android:exported="true" />
+        <activity
+            android:name=".line_status_list_item"
+            android:exported="true"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".garage_status_list_item"
+            android:exported="true" />
+        <activity
+            android:name=".edit_line"
+            android:exported="true" />
+        <activity
+            android:name=".read_complaints_list_item"
+            android:exported="true" />
+        <activity
+            android:name=".read_complaints"
+            android:exported="true" />
+        <activity
+            android:name=".car_status_list_item"
+            android:exported="true" />
+        <activity
+            android:name=".add_garage"
+            android:exported="true" />
+        <activity
+            android:name=".view_notification"
+            android:exported="true" />
+        <activity
+            android:name=".reset_password"
+            android:exported="true"/>
+        <activity
+            android:name=".View_Driver"
+            android:exported="true"/>
+        <activity
+            android:name=".View_Admin"
+            android:exported="true"/>
+        <activity
+            android:name=".View_Boss"
+            android:exported="true"/>
+        <activity
+            android:name=".boss_personal_page"
+            android:exported="true"/>
+        <activity
+            android:name=".edit_boss_personal_data"
+            android:exported="true"/>
+        <activity android:name=".about"
+            android:exported="true"  >
+
+        </activity>
+
+    </application>
+
+</manifest>

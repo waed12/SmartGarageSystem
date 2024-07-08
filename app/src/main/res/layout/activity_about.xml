@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="30dp">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/logo" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:text="Smart Garage System"
+                android:textColor="#FF6F00"
+                android:textSize="24sp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/login_forgetPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:text="من واقع معاناتنا في استخدام المواصلات العامة بين المدن خاصة كطلاب جامعة ، توصلنا إلى فكرة هذا التطبيق لتقليل هذه المعاناة وتجنب الأزمة وتنظيم حركة المرور والسيارات في الكراجات."
+            android:textAlignment="center"
+            android:textColor="#090909"
+            android:textColorHint="#040303"
+            android:textSize="20sp" />
+
+</LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/login_forgetPas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:text="التطبيق يحتوي على عدة مزايا تجعله سهل الاستخدام لدى جميع الناس ،
+ومن الاهداف التي يقوم بها أنه يوضح الحالة الحالية للكراجات والسيارات ، وهذه ميزة مهمة لتنظيم الوقت خصوصاً لدى غالبية الطلاب والموظفين."
+            android:textAlignment="center"
+            android:textColor="#090909"
+            android:textColorHint="#040303"
+            android:textSize="20sp" />
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/login_forge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:text="فريق العمل :"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="#090909"
+            android:textColorHint="#040303"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/name4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:text="مرح 'برهم زيد'"
+            android:gravity="center"
+            android:textColor="#090909"
+            android:textColorHint="#040303"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:id="@+id/name3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:text="نور 'برهم زيد' "
+            android:gravity="center"
+            android:textColor="#090909"
+            android:textColorHint="#040303"
+            android:textSize="20sp"
+            />
+
+
+
+
+
+        <TextView
+            android:id="@+id/name2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:text="سيرين إسماعيل "
+            android:gravity="center"
+            android:textColor="#090909"
+            android:textColorHint="#040303"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:id="@+id/name1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:text="وعد عزيز"
+            android:gravity="center"
+            android:textColor="#090909"
+            android:textColorHint="#040303"
+            android:textSize="20sp"
+            />
+
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

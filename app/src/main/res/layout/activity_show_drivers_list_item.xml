@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/showdriver_listitem">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="4dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/showDriversItem_userId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="right"
+                        android:visibility="gone"
+
+
+                        android:textColor="#9E9E9E"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:text="-"/>
+
+                    <TextView
+                        android:id="@+id/showDriversItem_deleteIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/delete_icon" />
+
+                    <TextView
+                        android:id="@+id/showDriversItem_messageIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/message_icon" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/showDriversItem_driverName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:text="اسم السائق"
+                            android:textColor="#090202"
+                            android:textSize="22sp"
+
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="right"
+                            android:layout_gravity="right"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/showDriversItem_garage2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="right"
+                                android:textColor="#9E9E9E"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                android:text="-"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingRight="15dp"
+                                android:paddingLeft="15dp"
+                                android:gravity="right"
+                                android:textColor="#9E9E9E"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                android:text="-"/>
+
+                            <TextView
+                                android:id="@+id/ShowDriversItem_garage1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="right"
+                                android:textColor="#9E9E9E"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                android:text="-"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+<!--            <ImageView-->
+<!--                android:id="@+id/showDriversItem_image"-->
+<!--                android:layout_width="150dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_weight="1"-->
+<!--                android:background="@drawable/rectangular_border"-->
+<!--                tools:srcCompat="@tools:sample/avatars" />-->
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/divider12"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#FF6F00"
+        android:backgroundTint="#FF6F00" />
+
+</LinearLayout>

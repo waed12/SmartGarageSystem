@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">LastGarageApp</string>
+
+    <string-array name="garage_admin">
+        <item>لم يحدد</item>
+        <item>طولكرم</item>
+        <item>نابلس</item>
+        <item>رام الله</item>
+        <item>قلقيلية</item>
+        <item>جنين</item>
+    </string-array>
+
+    <string-array name="am_pm">
+        <item>ص</item>
+        <item>م</item>
+    </string-array>
+
+    <string-array name="source">
+        <item>المكان الحالي</item>
+        <item>طولكرم</item>
+        <item>نابلس</item>
+        <item>رام الله</item>
+        <item>قلقيلية</item>
+        <item>جنين</item>
+    </string-array>
+
+    <string-array name="destination">
+        <item>الوجهة</item>
+        <item>طولكرم</item>
+        <item>نابلس</item>
+        <item>رام الله</item>
+        <item>قلقيلية</item>
+        <item>جنين</item>
+    </string-array>
+
+    <string-array name="driver_or_admin">
+        <item>سائق</item>
+        <item>مدير</item>
+    </string-array>
+
+    <string-array name="no_of_passenger">
+        <item>7</item>
+        <item>4</item>
+    </string-array>
+
+    <string-array name="driver">
+        <item>لم يحدد</item>
+        <item>محمد</item>
+        <item>احمد</item>
+    </string-array>
+
+    <string-array name="is_available">
+        <item>الموجودة في الكراج حاليا فقط</item>
+        <item>عرض الكل</item>
+        <item>احمد</item>
+    </string-array>
+
+
+</resources>

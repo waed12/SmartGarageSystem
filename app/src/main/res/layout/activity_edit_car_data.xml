@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/editDataGarage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="تعديل بيانات السيارة "
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="#FF6F00"
+            android:orientation="horizontal">
+
+            <View
+                android:id="@+id/divider3"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_weight="1"
+                android:backgroundTint="#FF6F00" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:gravity="right"
+                    android:background="@drawable/rectangular_border"
+                    android:padding="5dp"
+                    android:text="قم باختيار الخط الذي تعمل عليه السيارة المطلوبة:"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangular_border"
+android:padding="10dp"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/editCarData_destination1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:entries="@array/destination"
+                        android:text="الوجهة"
+                        android:backgroundTint="#ff6f00"
+                        android:textAlignment="viewEnd" />
+
+                    <Spinner
+                        android:id="@+id/editCarData_source1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:backgroundTint="#ff6f00"
+                        android:entries="@array/source"
+                        android:text="المكان الحالي"
+                        android:textAlignment="viewEnd" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/editCarData_carNumval"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:backgroundTint="#ff6f00"
+                        android:text="لم يحدد"
+                        android:textAlignment="viewEnd" />
+
+                    <TextView
+                        android:id="@+id/editDataGarage_GarageAdmin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="رقم السيارة"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/editCarData_nameDriverVal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:backgroundTint="#ff6f00"
+                        android:entries="@array/driver"
+                        android:text="لم يحدد"
+                        android:textAlignment="viewEnd" />
+                    <Spinner
+                        android:id="@+id/editCar_IDDriver"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:backgroundTint="#FF6F00"
+                        android:entries="@array/driver"
+                        android:text="لم يحدد"
+                        android:textAlignment="viewEnd"
+                        android:visibility="gone"/>
+
+                    <TextView
+                        android:id="@+id/editdatacar_drivername"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="إسم السائق"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+                    <Spinner
+                        android:id="@+id/editCarData_source"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:backgroundTint="#ff6f00"
+                        android:entries="@array/source"
+                        android:text="الوجهة"
+                        android:textAlignment="viewEnd" />
+
+
+                    <TextView
+                        android:id="@+id/editdatacar_sourcename"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="المكان الجديد"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <Spinner
+                            android:id="@+id/editCarData_destination"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:entries="@array/destination"
+                            android:text="المكان الحالي"
+                            android:backgroundTint="#ff6f00"
+                            android:textAlignment="viewEnd" />
+                        <TextView
+                            android:id="@+id/editdatacar_destinationname"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="الوجهة الجديدة"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <Button
+                        android:id="@+id/editGarage_cancel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="#FF6F00"
+                        android:text="إلغاء"
+                        android:textSize="24sp" />
+
+                    <Button
+                        android:id="@+id/editCar_saveChange"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="#FF6F00"
+                        android:text="حفظ التغييرات"
+                        android:textSize="24sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+<!--    android:id="@+id/myActionbar"-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#FF6F00">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/myActionBar_menuIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/menu_icon"
+
+                android:padding="8dp" />
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/myActionBar_messagesIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="8dp"
+            android:src="@drawable/message_icon" />
+
+        <ImageView
+            android:id="@+id/myActionBar_personIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="8dp"
+            android:src="@drawable/person_icon" />
+
+        <ImageView
+            android:id="@+id/myActionBar_notificationsIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="8dp"
+            android:src="@drawable/notifications_icon" />
+
+        <ImageView
+            android:id="@+id/myActionBar_homeIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="10dp"
+            android:layout_gravity="center"
+            android:padding="8dp"
+            android:src="@drawable/home_icon" />
+    </LinearLayout>
+
+</LinearLayout>
+

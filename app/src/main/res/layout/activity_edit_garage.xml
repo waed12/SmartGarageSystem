@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<!--mm-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/editDataGarage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="تعديل بيانات كراج "
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="#FF6F00"
+            android:orientation="horizontal">
+
+            <View
+                android:id="@+id/divider3"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_weight="1"
+                android:backgroundTint="#FF6F00" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/rectangular_border"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/editGarage_garageName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="#ff6f00"
+                    android:layout_weight="1"
+                    android:entries="@array/source"/>
+                <TextView
+                    android:id="@+id/editGarage_garageNameText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:text="الكراج"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"/>
+
+            </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/editGarage_newAdminName"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:backgroundTint="#ff6f00"
+                        android:layout_weight="1"
+                        android:entries="@array/garage_admin"/>
+                    <Spinner
+                        android:id="@+id/editGarage_IDAdmin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:backgroundTint="#FF6F00"
+                        android:entries="@array/driver"
+                        android:text="لم يحدد"
+                        android:textAlignment="viewEnd"
+                        android:visibility="gone"/>
+                    <TextView
+                        android:id="@+id/editDataGarage_GarageAdmin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:text="مسؤول الكراج"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <MultiAutoCompleteTextView
+                        android:id="@+id/editGarage_newLocation"
+                        android:layout_width="96dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:inputType="textImeMultiLine"/>
+
+                    <TextView
+                        android:id="@+id/editGarage_Location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:text="موقع الكراج"
+                        android:textColor="#070404"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/editGarage_newOpenHour"
+                        android:layout_width="121dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="time"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/editGarage_startWork"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:text="ساعة فتح الكراج:"
+                        android:textColor="#190F0F"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/editGarage_newCloseHour"
+                        android:layout_width="138dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="time"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/editGarage_endWork"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:text="ساعة إغلاق الكراج:"
+                        android:textColor="#150E0E"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <Button
+                        android:id="@+id/editGarage_cancel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="#FF6F00"
+                        android:text="إلغاء"
+                        android:textSize="24sp" />
+
+                    <Button
+                        android:id="@+id/editGarage_saveChange"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="#FF6F00"
+                        android:text="حفظ التغييرات"
+                        android:textSize="24sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/carStatus_layout"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#EEEEEE">
+
+    <LinearLayout
+        android:id="@+id/conversation_nameBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+
+        android:background="#ff6f00"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/conversation_backIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/go_icon"
+            app:tint="@color/white" />
+
+        <TextView
+            android:id="@+id/conversation_receiverName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingLeft="20dp"
+            android:text="-"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/conversation_addMessage"
+        android:layout_below="@id/conversation_nameBar"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:id="@+id/conversation_myScroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:orientation="vertical">
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/converRecyView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/conversation_addMessage"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <EditText
+            android:id="@+id/conversation_addText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/white_background"
+            android:ems="10"
+            android:gravity="right|left"
+            android:hint="اكتب رسالة هنا......"
+            android:inputType="textMultiLine"
+            android:maxHeight="140dp"
+            android:padding="12dp"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <ImageView
+            android:id="@+id/conversation_send_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_send_icon"
+            android:padding="12dp"
+            android:src="@drawable/send_icon" />
+
+    </LinearLayout>
+</RelativeLayout>
