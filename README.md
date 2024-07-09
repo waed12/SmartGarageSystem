@@ -7,3 +7,4 @@ the garage, using GPS, to help
 people to know about the current status of the garage.
 • Designed and implemented the app using nave Android. The
 backend was developed using PHP.
+• IDE: Android Studio.
